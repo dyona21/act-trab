@@ -1,0 +1,4 @@
+protocolo,sensor_id,seq,t_envio,t_recebimento,disparou_alerta,duplicata,temperatura,umidade
+MQTT_QOS0,sensor01,0,1000,3166392779200,False,False,5.2,45.1
+MQTT_QOS0,sensor01,0,1000,3187006705000,False,True,5.2,45.1
+MQTT_QOS0,sensor02,0,1000,3205157533600,True,False,10.5,45.1

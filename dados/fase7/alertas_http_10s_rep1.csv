@@ -1,0 +1,2 @@
+protocolo,sensor_id,seq_abertura,tipo,t_envio,t_recebimento,t_alerta,tempo_alerta_ns
+HTTP,sensor07,4,temperatura,7004534524200,7004538427700,7004538936800,4412600

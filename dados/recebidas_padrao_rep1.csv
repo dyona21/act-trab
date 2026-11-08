@@ -1,0 +1,3 @@
+protocolo,sensor_id,seq,t_envio,t_recebimento,disparou_alerta,duplicata,temperatura,umidade
+HTTP,sensor01,0,1000,3453068061700,False,False,5.2,45.1
+HTTP,sensor02,0,1000,3463636188400,True,False,10.5,45.1

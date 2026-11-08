@@ -1,0 +1,12 @@
+{
+  "protocolo": "HTTP",
+  "cenario_id": "padrao",
+  "repeticao": 1,
+  "total_recebidas": 2,
+  "total_unicas": 2,
+  "total_duplicatas": 0,
+  "total_invalidas": 2,
+  "total_alertas": 1,
+  "arquivo_leituras": "dados\\recebidas_padrao_rep1.csv",
+  "arquivo_alertas": "dados\\alertas_padrao_rep1.csv"
+}

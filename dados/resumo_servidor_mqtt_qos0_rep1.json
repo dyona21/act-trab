@@ -1,0 +1,12 @@
+{
+  "protocolo": "MQTT_QOS0",
+  "cenario_id": "mqtt_qos0",
+  "repeticao": 1,
+  "total_recebidas": 3,
+  "total_unicas": 2,
+  "total_duplicatas": 1,
+  "total_invalidas": 2,
+  "total_alertas": 1,
+  "arquivo_leituras": "dados\\recebidas_mqtt_qos0_rep1.csv",
+  "arquivo_alertas": "dados\\alertas_mqtt_qos0_rep1.csv"
+}
