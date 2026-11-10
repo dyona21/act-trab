@@ -174,8 +174,8 @@ def executar_rodada(
     aquecimento_s: float = TEMPO_AQUECIMENTO_S,
     medicao_s: float = DURACAO_MEDICAO_S,
     tolerancia_fim_s: float = TOLERANCIA_FIM_S,
-    url_http: str = "http://127.0.0.1:8000",
-    broker_host: str = "127.0.0.1",
+    url_http: str = "http://172.20.10.10:8000",
+    broker_host: str = "172.20.10.10",
     broker_port: int = 1883,
     diretorio_saida: str = "dados",
     arquivo_captura: str = "",
@@ -242,7 +242,7 @@ def executar_rodada(
 
     num_cpus = max(1, os.cpu_count() or 1)
     cpu_proc_inicio = time.process_time()
-    t0_perf_ns = time.perf_counter_ns()
+    t0_perf_ns = time.time_ns()
     horario_inicio_iso = dt.datetime.now(dt.timezone.utc).isoformat()
 
     threads: list[threading.Thread] = []
@@ -267,7 +267,7 @@ def executar_rodada(
     for t in threads:
         t.join()
 
-    t_fim_envios_ns = time.perf_counter_ns()
+    t_fim_envios_ns = time.time_ns()
     duracao_real_perf = max(0.001, (t_fim_envios_ns - t0_perf_ns) / 1_000_000_000.0)
     cpu_proc_fim = time.process_time()
     uso_cpu_medio_pct = round(((cpu_proc_fim - cpu_proc_inicio) / (duracao_real_perf * num_cpus)) * 100.0, 2)

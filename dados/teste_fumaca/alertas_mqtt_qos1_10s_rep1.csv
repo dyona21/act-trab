@@ -1,2 +1,0 @@
-protocolo,sensor_id,seq_abertura,tipo,t_envio,t_recebimento,t_alerta,tempo_alerta_ns
-MQTT_QOS1,sensor07,4,temperatura,4239788815100,4239789786100,4239789872700,1057600

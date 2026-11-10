@@ -109,8 +109,8 @@ class ProcessadorLeituras:
                     # RN10: Abre alerta na primeira leitura em violação
                     self._alerta_aberto[leitura.sensor_id] = True
                     disparou_alerta = True
-                    # RN11, RN12, RN15: Marca instante do alerta com perf_counter_ns e registra em memória
-                    t_alerta = time.perf_counter_ns()
+                    # RN11, RN12, RN15: Marca instante do alerta com time_ns e registra em memória
+                    t_alerta = time.time_ns()
                     tempo_alerta_ns = t_alerta - leitura.t_envio
                     self._buffer_alertas.append(
                         (

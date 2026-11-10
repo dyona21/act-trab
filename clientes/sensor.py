@@ -212,7 +212,7 @@ class SimuladorSensorDHT22:
         self.seq += 1
 
         # RN06: t_envio marcado imediatamente antes do envio em nanossegundos (perf_counter_ns)
-        t_envio = time.perf_counter_ns()
+        t_envio = time.time_ns()
 
         dados = {
             "sensor_id": self.sensor_id,

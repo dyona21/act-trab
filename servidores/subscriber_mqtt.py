@@ -83,7 +83,7 @@ class SubscriberMQTT:
         1. Marca t_recebimento com time.perf_counter_ns() como primeiro passo absoluto (RN21)
         2. Encaminha o payload para o mesmo processador usado pela API HTTP (RN20)
         """
-        t_recebimento = time.perf_counter_ns()
+        t_recebimento = time.time_ns()
 
         if msg.topic == TOPICO_CONTROLE_FINALIZAR:
             self._tratar_comando_finalizar(msg.payload)

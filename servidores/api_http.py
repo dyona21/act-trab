@@ -42,7 +42,7 @@ async def receber_leitura(request: Request) -> Response:
     2. Valida JSON e limites físicos do DHT22
     3. Registra leitura em memória e avalia limiares de alerta
     """
-    t_recebimento = time.perf_counter_ns()
+    t_recebimento = time.time_ns()
     payload_bruto = await request.body()
 
     valida = processador.processar_payload(payload_bruto, t_recebimento)
