@@ -294,7 +294,7 @@ def executar_rodada(ordem, r, args, ferramentas):
             qos = "1" if proto.endswith("qos1") else "0"
             sub = subprocess.Popen(
                 [sys.executable, "-m", "servidores.subscriber_mqtt",
-                 "--qos", qos, "--cenario", f"mqtt_qos{qos}"],
+                 "--qos", qos, "--cenario", cen, "--repeticao", str(rep), "--saida", pasta],
                 stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
             servidores.append(sub)
             time.sleep(3)
@@ -329,12 +329,20 @@ def executar_rodada(ordem, r, args, ferramentas):
         if not os.path.exists(resumo):
             obs.append("arquivos do servidor ausentes; tentou finalizar manualmente")
             try:
+                corpo_fin = json.dumps(
+                    {"cenario_id": cen, "repeticao": rep, "diretorio_saida": pasta}
+                )
                 if http:
-                    urllib.request.urlopen(urllib.request.Request(
-                        f"http://127.0.0.1:{PORTA_HTTP}/finalizar", method="POST"), timeout=10)
+                    req_fin = urllib.request.Request(
+                        f"http://127.0.0.1:{PORTA_HTTP}/finalizar",
+                        data=corpo_fin.encode("utf-8"),
+                        headers={"Content-Type": "application/json"},
+                        method="POST",
+                    )
+                    urllib.request.urlopen(req_fin, timeout=10)
                 else:
                     subprocess.run([ferramentas["mosquitto_pub"], "-h", "localhost", "-t",
-                                    "lab/controle/finalizar", "-m", "fim"], timeout=10)
+                                    "lab/controle/finalizar", "-m", corpo_fin], timeout=10)
             except Exception as e:  # noqa: BLE001
                 obs.append(f"falha no finalizar: {e}")
             time.sleep(3)

@@ -449,11 +449,12 @@ if __name__ == "__main__":
 
     if args.gerar_plano:
         plano = gerar_ordem_sorteada_rodadas()
-        arq_plano = Path(args.saida) / "plano_sorteado_45_rodadas.json"
-        arq_plano.parent.mkdir(parents=True, exist_ok=True)
-        with arq_plano.open("w", encoding="utf-8") as f:
-            json.dump(plano, f, indent=2, ensure_ascii=False)
-        print(f"Plano sorteado com {len(plano)} rodadas salvo em: {arq_plano}")
+        for nome_arq in ("plano_rodadas.json", "plano_sorteado_45_rodadas.json"):
+            arq_plano = Path(args.saida) / nome_arq
+            arq_plano.parent.mkdir(parents=True, exist_ok=True)
+            with arq_plano.open("w", encoding="utf-8") as f:
+                json.dump(plano, f, indent=2, ensure_ascii=False)
+            print(f"Plano sorteado com {len(plano)} rodadas salvo em: {arq_plano}")
     else:
         meta = executar_rodada(
             protocolo=args.protocolo,

@@ -1,0 +1,317 @@
+[
+  {
+    "protocolo": "mqtt_qos1",
+    "num_sensores": 100,
+    "repeticao": 3,
+    "semente": 10411,
+    "cenario_id": "mqtt_qos1_100s"
+  },
+  {
+    "protocolo": "http",
+    "num_sensores": 50,
+    "repeticao": 3,
+    "semente": 10411,
+    "cenario_id": "http_50s"
+  },
+  {
+    "protocolo": "http",
+    "num_sensores": 100,
+    "repeticao": 5,
+    "semente": 10685,
+    "cenario_id": "http_100s"
+  },
+  {
+    "protocolo": "mqtt_qos0",
+    "num_sensores": 100,
+    "repeticao": 3,
+    "semente": 10411,
+    "cenario_id": "mqtt_qos0_100s"
+  },
+  {
+    "protocolo": "http",
+    "num_sensores": 10,
+    "repeticao": 4,
+    "semente": 10548,
+    "cenario_id": "http_10s"
+  },
+  {
+    "protocolo": "mqtt_qos1",
+    "num_sensores": 50,
+    "repeticao": 2,
+    "semente": 10274,
+    "cenario_id": "mqtt_qos1_50s"
+  },
+  {
+    "protocolo": "mqtt_qos1",
+    "num_sensores": 50,
+    "repeticao": 1,
+    "semente": 10137,
+    "cenario_id": "mqtt_qos1_50s"
+  },
+  {
+    "protocolo": "mqtt_qos0",
+    "num_sensores": 10,
+    "repeticao": 4,
+    "semente": 10548,
+    "cenario_id": "mqtt_qos0_10s"
+  },
+  {
+    "protocolo": "http",
+    "num_sensores": 50,
+    "repeticao": 1,
+    "semente": 10137,
+    "cenario_id": "http_50s"
+  },
+  {
+    "protocolo": "mqtt_qos1",
+    "num_sensores": 10,
+    "repeticao": 1,
+    "semente": 10137,
+    "cenario_id": "mqtt_qos1_10s"
+  },
+  {
+    "protocolo": "mqtt_qos1",
+    "num_sensores": 100,
+    "repeticao": 5,
+    "semente": 10685,
+    "cenario_id": "mqtt_qos1_100s"
+  },
+  {
+    "protocolo": "http",
+    "num_sensores": 100,
+    "repeticao": 2,
+    "semente": 10274,
+    "cenario_id": "http_100s"
+  },
+  {
+    "protocolo": "mqtt_qos1",
+    "num_sensores": 50,
+    "repeticao": 3,
+    "semente": 10411,
+    "cenario_id": "mqtt_qos1_50s"
+  },
+  {
+    "protocolo": "mqtt_qos0",
+    "num_sensores": 50,
+    "repeticao": 4,
+    "semente": 10548,
+    "cenario_id": "mqtt_qos0_50s"
+  },
+  {
+    "protocolo": "mqtt_qos0",
+    "num_sensores": 10,
+    "repeticao": 3,
+    "semente": 10411,
+    "cenario_id": "mqtt_qos0_10s"
+  },
+  {
+    "protocolo": "mqtt_qos1",
+    "num_sensores": 100,
+    "repeticao": 2,
+    "semente": 10274,
+    "cenario_id": "mqtt_qos1_100s"
+  },
+  {
+    "protocolo": "http",
+    "num_sensores": 10,
+    "repeticao": 2,
+    "semente": 10274,
+    "cenario_id": "http_10s"
+  },
+  {
+    "protocolo": "http",
+    "num_sensores": 100,
+    "repeticao": 1,
+    "semente": 10137,
+    "cenario_id": "http_100s"
+  },
+  {
+    "protocolo": "mqtt_qos0",
+    "num_sensores": 50,
+    "repeticao": 2,
+    "semente": 10274,
+    "cenario_id": "mqtt_qos0_50s"
+  },
+  {
+    "protocolo": "mqtt_qos1",
+    "num_sensores": 50,
+    "repeticao": 5,
+    "semente": 10685,
+    "cenario_id": "mqtt_qos1_50s"
+  },
+  {
+    "protocolo": "mqtt_qos1",
+    "num_sensores": 10,
+    "repeticao": 2,
+    "semente": 10274,
+    "cenario_id": "mqtt_qos1_10s"
+  },
+  {
+    "protocolo": "http",
+    "num_sensores": 50,
+    "repeticao": 5,
+    "semente": 10685,
+    "cenario_id": "http_50s"
+  },
+  {
+    "protocolo": "mqtt_qos0",
+    "num_sensores": 50,
+    "repeticao": 3,
+    "semente": 10411,
+    "cenario_id": "mqtt_qos0_50s"
+  },
+  {
+    "protocolo": "mqtt_qos1",
+    "num_sensores": 100,
+    "repeticao": 4,
+    "semente": 10548,
+    "cenario_id": "mqtt_qos1_100s"
+  },
+  {
+    "protocolo": "mqtt_qos0",
+    "num_sensores": 50,
+    "repeticao": 5,
+    "semente": 10685,
+    "cenario_id": "mqtt_qos0_50s"
+  },
+  {
+    "protocolo": "mqtt_qos0",
+    "num_sensores": 100,
+    "repeticao": 4,
+    "semente": 10548,
+    "cenario_id": "mqtt_qos0_100s"
+  },
+  {
+    "protocolo": "mqtt_qos0",
+    "num_sensores": 10,
+    "repeticao": 5,
+    "semente": 10685,
+    "cenario_id": "mqtt_qos0_10s"
+  },
+  {
+    "protocolo": "mqtt_qos0",
+    "num_sensores": 10,
+    "repeticao": 2,
+    "semente": 10274,
+    "cenario_id": "mqtt_qos0_10s"
+  },
+  {
+    "protocolo": "mqtt_qos0",
+    "num_sensores": 50,
+    "repeticao": 1,
+    "semente": 10137,
+    "cenario_id": "mqtt_qos0_50s"
+  },
+  {
+    "protocolo": "http",
+    "num_sensores": 10,
+    "repeticao": 1,
+    "semente": 10137,
+    "cenario_id": "http_10s"
+  },
+  {
+    "protocolo": "mqtt_qos1",
+    "num_sensores": 10,
+    "repeticao": 3,
+    "semente": 10411,
+    "cenario_id": "mqtt_qos1_10s"
+  },
+  {
+    "protocolo": "mqtt_qos0",
+    "num_sensores": 10,
+    "repeticao": 1,
+    "semente": 10137,
+    "cenario_id": "mqtt_qos0_10s"
+  },
+  {
+    "protocolo": "mqtt_qos0",
+    "num_sensores": 100,
+    "repeticao": 2,
+    "semente": 10274,
+    "cenario_id": "mqtt_qos0_100s"
+  },
+  {
+    "protocolo": "mqtt_qos1",
+    "num_sensores": 10,
+    "repeticao": 4,
+    "semente": 10548,
+    "cenario_id": "mqtt_qos1_10s"
+  },
+  {
+    "protocolo": "mqtt_qos1",
+    "num_sensores": 50,
+    "repeticao": 4,
+    "semente": 10548,
+    "cenario_id": "mqtt_qos1_50s"
+  },
+  {
+    "protocolo": "mqtt_qos1",
+    "num_sensores": 10,
+    "repeticao": 5,
+    "semente": 10685,
+    "cenario_id": "mqtt_qos1_10s"
+  },
+  {
+    "protocolo": "http",
+    "num_sensores": 100,
+    "repeticao": 3,
+    "semente": 10411,
+    "cenario_id": "http_100s"
+  },
+  {
+    "protocolo": "http",
+    "num_sensores": 100,
+    "repeticao": 4,
+    "semente": 10548,
+    "cenario_id": "http_100s"
+  },
+  {
+    "protocolo": "http",
+    "num_sensores": 10,
+    "repeticao": 5,
+    "semente": 10685,
+    "cenario_id": "http_10s"
+  },
+  {
+    "protocolo": "http",
+    "num_sensores": 50,
+    "repeticao": 2,
+    "semente": 10274,
+    "cenario_id": "http_50s"
+  },
+  {
+    "protocolo": "mqtt_qos0",
+    "num_sensores": 100,
+    "repeticao": 1,
+    "semente": 10137,
+    "cenario_id": "mqtt_qos0_100s"
+  },
+  {
+    "protocolo": "mqtt_qos0",
+    "num_sensores": 100,
+    "repeticao": 5,
+    "semente": 10685,
+    "cenario_id": "mqtt_qos0_100s"
+  },
+  {
+    "protocolo": "http",
+    "num_sensores": 50,
+    "repeticao": 4,
+    "semente": 10548,
+    "cenario_id": "http_50s"
+  },
+  {
+    "protocolo": "http",
+    "num_sensores": 10,
+    "repeticao": 3,
+    "semente": 10411,
+    "cenario_id": "http_10s"
+  },
+  {
+    "protocolo": "mqtt_qos1",
+    "num_sensores": 100,
+    "repeticao": 1,
+    "semente": 10137,
+    "cenario_id": "mqtt_qos1_100s"
+  }
+]

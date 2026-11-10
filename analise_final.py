@@ -245,18 +245,19 @@ def analisar_rodada(
     cpu_gerador_pct = np.nan
 
     # Procura CPU nos metadados ou em coleta_progresso.csv
-    for chave_cpu in ("cpu_gerador_pct", "cpu_pct", "cpu_media_pct", "cpu"):
+    for chave_cpu in ("uso_cpu_gerador_pct", "cpu_gerador_pct", "cpu_pct", "cpu_media_pct", "cpu"):
         if chave_cpu in meta and meta[chave_cpu] is not None:
             cpu_gerador_pct = float(meta[chave_cpu])
             break
 
     if np.isnan(cpu_gerador_pct) and df_progresso is not None:
-        # Tenta cruzar pelo cenario/sufixo e repeticao
+        # Tenta cruzar pelo cenario_id/cenario e repeticao
         cenario_alvo = f"{proto_nome}_{sensores_nome}s"
         cols = set(df_progresso.columns)
-        if {"cenario", "repeticao"}.issubset(cols):
+        col_cen = "cenario_id" if "cenario_id" in cols else ("cenario" if "cenario" in cols else None)
+        if col_cen and "repeticao" in cols:
             filtro = df_progresso[
-                (df_progresso["cenario"] == cenario_alvo)
+                (df_progresso[col_cen] == cenario_alvo)
                 & (df_progresso["repeticao"] == rep_nome)
             ]
             for col_c in filtro.columns:
